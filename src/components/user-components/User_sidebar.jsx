@@ -11,7 +11,7 @@ function Usidebar() {
     <div className={`${open? "left-[0px]": "left-[-300px]"} ${close? "left-[-300px]": "left-[0px]"} fixed lg:left-0 z-[60] transition-left duration-1000 m-4 sidebar-cover text-center `}>
       <div className={` rounded-xl border-none flex flex-col sidebar p-5`}>  
         <div className=" bg-transparent relative flex flex-row lg:pt-4 text-center">
-          <Link to="/user-dashboard" className="flex flex-row  text-center">
+          <Link to="/user/user-dashboard" className="flex flex-row  text-center">
             <div className="w-[60px] h-[60px] rounded-[50%] border-solid border-2 border-white text-center">
               <i className="fa-solid fa-user m-2 cursor-pointer text-[35px] text-white"></i>
             </div>
@@ -24,19 +24,19 @@ function Usidebar() {
         </div>
         <hr className="hrr" />
         <div className=" text-white flex flex-col justify-around items-center dashboard-link">
-          <Link to="/user-dashboard" className="bg-transparent hover:bg-gray-600 text-white font-normal flex items-center justify-around w-48 my-1 mx-auto py-2 relative rounded-2xl focus:bg-gradient-to-l from-green-400 via-green-500 to-green-600">
+          <Link to="/user/user-dashboard" className="bg-transparent hover:bg-gray-600 text-white font-normal flex items-center justify-around w-48 my-1 mx-auto py-2 relative rounded-2xl focus:bg-gradient-to-l from-green-400 via-green-500 to-green-600">
             <i className="fa-solid fa-house w-fit ml-4 mb-1"></i>
             <div className="text-left ml-4 mr-auto">Dashboard</div>
           </Link> 
-          <Link to="/current-update" className="bg-transparent hover:bg-gray-600 text-white font-normal flex items-center justify-around w-48 my-1 mx-auto py-2 relative rounded-2xl focus:bg-gradient-to-l from-green-400 via-green-500 to-green-600">
+          <Link to="/user/current-update" className="bg-transparent hover:bg-gray-600 text-white font-normal flex items-center justify-around w-48 my-1 mx-auto py-2 relative rounded-2xl focus:bg-gradient-to-l from-green-400 via-green-500 to-green-600">
             <i className="fa-solid fa-bell w-fit ml-4 mb-1"></i>
             <div className="text-left ml-4 mr-auto">Live Update</div>
           </Link>
-          <Link to="/user-record" className="bg-transparent hover:bg-gray-600 text-white font-normal flex items-center justify-around w-48 my-1 mx-auto py-2 relative rounded-2xl focus:bg-gradient-to-l from-green-400 via-green-500 to-green-600">
+          <Link to="/user/user-record" className="bg-transparent hover:bg-gray-600 text-white font-normal flex items-center justify-around w-48 my-1 mx-auto py-2 relative rounded-2xl focus:bg-gradient-to-l from-green-400 via-green-500 to-green-600">
             <i className="fa-regular fa-clipboard w-fit ml-4 mb-1"></i>
             <div className="text-left ml-4 mr-auto">Record</div>
           </Link> 
-          <Link to="/user-setting" className="bg-transparent hover:bg-gray-600 text-white font-normal flex items-center justify-around w-48 my-1 mx-auto py-2 relative rounded-2xl focus:bg-gradient-to-l from-green-400 via-green-500 to-green-600">
+          <Link to="/user/user-setting" className="bg-transparent hover:bg-gray-600 text-white font-normal flex items-center justify-around w-48 my-1 mx-auto py-2 relative rounded-2xl focus:bg-gradient-to-l from-green-400 via-green-500 to-green-600">
             <i className="fa-solid fa-gear w-fit ml-4 mb-1"></i>
             <div className="text-left ml-4 mr-auto">Settings</div>
           </Link>                

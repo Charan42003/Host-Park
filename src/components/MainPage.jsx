@@ -4,8 +4,7 @@ import car_cr from '../images/car-crop.jpg';
 import car_bg from '../images/car.jpg';
 import logo from '../images/logo-white.png';
 import s_logo from '../images/logo.png';
-// import { Link } from "react-router-dom";
-// import { faWheatAwnCircleExclamation } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 function MainPage() {
   let background = {
@@ -22,8 +21,8 @@ function MainPage() {
       <div className="flex flex-col absolute top-[20%] justify-center z-50 items-center md:top-[10%] md:left-[50%] md:-translate-x-[50%] lg:left-auto lg:translate-x-0 lg:right-[15%] lg:top-[35%]">
           <img src={logo} alt="" className=':h-auto w-[50%] md:w-[100%]' /> 
         <div className="flex flex-row text-white justify-evenly relative mt-7 z-50">
-          <a href='https://google.com' className='px-6 py-1 cursor-pointer rounded-md redirect hover:text-[#c1bfbf]' style={border}>Admin</a>
-          <a href='https://youtube.com' className='px-6 py-1 cursor-pointer rounded-md redirect hover:text-[#c1bfbf]' style={border}>User</a>
+          <Link to='/admin' className='px-6 py-1 cursor-pointer rounded-md redirect hover:text-[#c1bfbf]' style={border}>Admin</Link>
+          <Link to='/user' className='px-6 py-1 cursor-pointer rounded-md redirect hover:text-[#c1bfbf]' style={border}>User</Link>
         </div>
       </div>
       <img src={car_bg} alt="" className='absolute bottom-0 lg:top-0 md:block z-0 md:top-0 lg:hidden opacity-50'/>

@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.css';
 import { Routes, Route } from "react-router-dom";
-import Asidebar from './components/admin-components/Admin-sidebar';
-import Adashboard from "./components/admin-components/Adashboard";
-import Addlots from "./components/admin-components/Add_lots";
-import AddPremium from "./components/admin-components/Add_premium";
-import Adminrecord from "./components/admin-components/Admin_record";
-import Adminsetting from "./components/admin-components/Admin_setting";
+import Asidebar from './admin-components/Admin-sidebar';
+import Adashboard from "./admin-components/Adashboard";
+import Addlots from "./admin-components/Add_lots";
+import AddPremium from "./admin-components/Add_premium";
+import Adminrecord from "./admin-components/Admin_record";
+import Adminsetting from "./admin-components/Admin_setting";
 
 function Admin() {
   return (
